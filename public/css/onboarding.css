@@ -11,9 +11,14 @@
     --blue-green: #1C445B;
 }
 
+* {
+    box-sizing: border-box;
+}
+
 #onboarding_page {
     height: 100%;
     width: 100%;
+    box-sizing: border-box;
     background-color: var(--main-blue);
 }
 
@@ -29,8 +34,10 @@
     text-align: center;
     font-size: 2rem;
     text-align: center;
-    margin-bottom: 1rem;
     justify-content: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
 }
 
 .app-logo-placeholder h1 {
@@ -43,12 +50,20 @@
     display: flex;
     flex-direction: column;
     justify-content: flex-end;
-    height: 15rem;
-    margin-bottom: 0.8rem;
+    height: 100%;
+    margin: 0;
+    padding: 0;
+}
+
+/* Media query for smaller screens */
+@media (max-width:  768px) {
+    #welcome-message-placeholder {
+        height: auto; /* Let the div take the natural height of its content */
+    }
 }
 
 #name-tagline-placeholder {
-    height: 6rem;
+    height: 20%;
 }
 
 #app_name {
@@ -60,15 +75,15 @@
     display: none;
     color: var(--main-blue);
     font-family: var(--mainfont);
-    font-size: 1.3rem;
+    font-size: 1.2rem;
     font-weight: 400;
 }
 
 .progress-bar-placeholder {
     display: flex;
     justify-content: center;
-    margin-top: 1rem;
-    margin-bottom: 2.5rem;
+    margin-top: 0.5rem;
+    margin-bottom: 1.5rem;
     margin-left: auto;
     margin-right: auto;
 }
