@@ -124,4 +124,5 @@
 
 .onboarding-footer a {
     color: var(--white-bg);
+    text-decoration: none;
 }

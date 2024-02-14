@@ -8,9 +8,9 @@ const controller = require("../controllers/controller.js");
 router.get("/", controller.getOnboarding);
 
 // For viewing login
-//router.get("/", controller.getLogin);
+router.get("/login", controller.getLogin);
 
 // For viewing register
-//router.get("/", controller.getSignup);
+router.get("/signup", controller.getSignup);
 
 module.exports = router;
